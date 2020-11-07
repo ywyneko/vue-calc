@@ -3,24 +3,24 @@
     <div class="display">
      {{current || '0'}}
     </div>
-    <div @click="clear" class="btn">C</div>
-    <div @click="sign" class="btn">+/-</div>
-    <div @click="percent" class="btn">%</div>
+    <div @click="clear" class="btn upper">C</div>
+    <div @click="sign" class="btn upper">+/-</div>
+    <div @click="percent" class="btn upper">%</div>
     <div @click="divide" class="btn operator">÷</div>
-    <div @click="append(7)" class="btn">7</div>
-    <div @click="append(8)" class="btn">8</div>
-    <div @click="append(9)" class="btn">9</div>
+    <div @click="append(7)" class="btn keys">7</div>
+    <div @click="append(8)" class="btn keys">8</div>
+    <div @click="append(9)" class="btn keys">9</div>
     <div @click="times" class="btn operator">x</div>
-    <div @click="append(4)" class="btn">4</div>
-    <div @click="append(5)" class="btn">5</div>
-    <div @click="append(6)" class="btn">6</div>
+    <div @click="append(4)" class="btn keys">4</div>
+    <div @click="append(5)" class="btn keys">5</div>
+    <div @click="append(6)" class="btn keys">6</div>
     <div @click="minus" class="btn operator">-</div>
-    <div @click="append(1)" class="btn">1</div>
-    <div @click="append(2)" class="btn">2</div>
-    <div @click="append(3)" class="btn">3</div>
+    <div @click="append(1)" class="btn keys">1</div>
+    <div @click="append(2)" class="btn keys">2</div>
+    <div @click="append(3)" class="btn keys" keys>3</div>
     <div @click="add" class="btn operator">+</div>
-    <div @click="append(0)" class="btn zero">0</div>
-    <div @click="Dot" class="btn">.</div>
+    <div @click="append(0)" class="btn zero keys">0</div>
+    <div @click="Dot" class="btn keys">.</div>
     <div @click="equal" class="btn operator">=</div>
   </div>
 </template>
@@ -111,5 +111,13 @@ export default {
   .operator{
     background-color: orange;
     color: #fff;
+  }
+  .upper{
+    background-color: #4A4A4A;
+    color: #fff;
+  }
+  .keys{
+    background-color: #6B6B6B;
+    color : #fff;
   }
 </style>

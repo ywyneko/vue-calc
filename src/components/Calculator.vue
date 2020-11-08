@@ -89,7 +89,7 @@ export default {
 
 <style scoped>
   .calculator{
-    width: 400px;
+    width: 300px;
     margin : 0 auto;
     font-size: 40px;
     display: grid;
